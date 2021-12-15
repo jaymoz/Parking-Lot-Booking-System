@@ -28,15 +28,15 @@ Open the folder in a code editor, create and activate a virtual environment and 
    pip3 install -r requirements.txt 
 ```
 Create database and make migrations:
-```
+```python
    python manage.py makemigrations
    python manage.py migrate
 ```
 Create a superuser to gain access to the database:
-```
+```python
    python manage.py createsuperuser
 ```
 run the server:
-```
+```python
    python manage.py runserver
 ```
