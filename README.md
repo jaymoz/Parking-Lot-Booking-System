@@ -68,13 +68,13 @@ There are two main models in the database:
    - car_model: describes information about the vehicle model
    - plate_number: vehicle plate number
    - start_period: date and time at which vehicles can be parked
-   - end_period: date and time at which boking expires and vehices must be removed
-   - is_booked: Shows that booking was succesful and is valid( NOTE:Bookings are not deleted from the database but are flagged to false which shows the bokoing has been cancelled)
+   - end_period: date and time at which booking expires and vehices must be removed
+   - is_booked: Shows that booking was succesful and is valid( NOTE: Bookings are not deleted from the database but are flagged to false which shows the booking has been cancelled)
    - ticket: booking ticket which give you entrance to park vehicle
    - phone: User mobile number
    - parking_space: Name of parking space where user can park the vehicle
  
- # Bookings are not deleted from the database rather the "is_flagged" field in "Bookings" is set false which shows the bokoing has been cancelled or has expired.This is because booking details are important and should be treated as such!
+ # Bookings are not deleted from the database rather the "is_flagged" field in "Bookings" is set false which shows the booking has been cancelled or has expired.This is because booking details are important and should be treated as such!
  
  - to use the application it is necassary to first create a parking space!!!
  
