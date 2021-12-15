@@ -78,3 +78,49 @@ There are two main models in the database:
  
  - to use the application it is necassary to first create a parking space!!!
  
+
+# API DOCUMENTATION
+Get user Token:
+```html
+   http POST  http://127.0.0.1:8000/api-token-auth/ username=“YOUR_USERNAME" password=“YOUR_PASSWORD”
+```
+Create a Parking Space (only for users in Manager group):
+- url: 
+```
+   http://127.0.0.1:8000/api/create-parking-space/
+  ```
+View all parking spaces:
+- url: 
+```
+   http://127.0.0.1:8000/api/parking-spaces/
+  ```
+Delete a parking space (only for users in Manager group):
+- url: 
+```
+   delete-parking-space/[id-parking-space]/
+  ```
+View all bookings (only users in Manager group can view all bookings, users in Employee groups can see only their bookings):
+- url: 
+```
+   http://127.0.0.1:8000/bookings/
+  ```
+Book a parking space:
+- url: 
+```
+   http://127.0.0.1:8000/api/book/[id-park-to-book]/
+  ```
+update booking (only for users in Manager group):
+- url: 
+```
+   http://127.0.0.1:8000/api/update-booking/[id-booking]/
+  ```
+cancel a booking (only for users in Manager group):
+- url: 
+```
+   http://127.0.0.1:8000/api/cancel-booking/[id-booking]/
+  ```
+View booking details:
+- url: 
+```
+   http://127.0.0.1:8000/api/booking-detail/[id-booking]/
+  ```
