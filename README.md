@@ -29,14 +29,14 @@ Open the folder in a code editor, create and activate a virtual environment and 
 ```
 Create database and make migrations:
 ```python
-   python manage.py makemigrations
-   python manage.py migrate
+   python3 manage.py makemigrations
+   python3 manage.py migrate
 ```
 Create a superuser to gain access to the database:
 ```python
-   python manage.py createsuperuser
+   python3 manage.py createsuperuser
 ```
 run the server:
 ```python
-   python manage.py runserver
+   python3 manage.py runserver
 ```
