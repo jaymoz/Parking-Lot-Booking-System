@@ -1,4 +1,5 @@
 # PARKING LOT SPACE BOOKING SYSTEM
+- deployed project at http://jaymoz.pythonanywhere.com/
 ## Task description
 Technical task
 
@@ -15,6 +16,7 @@ List of required screens:
 
 Technologies used in this Task
 - Django, Django Rest Framework
+
 
 ## installation and Api documentation
 Clone this repo:
@@ -80,6 +82,12 @@ There are two main models in the database:
  
 
 # API DOCUMENTATION
+Using the website replace the local host with http://jaymoz.pythonanywhere.com/api/[path]
+e.g:
+   http://jaymoz.pythonanywhere.com/api/create-parking-space/
+
+ - id-booking: unique id of each succesful booking placed.
+ - id-park-to-book: unique if of the intended parking space where you want to book.
 Get user Token:
 ```html
    sudo install httpie
@@ -98,7 +106,7 @@ View all parking spaces:
 Delete a parking space (only for users in Manager group):
 - url: 
 ```
-   delete-parking-space/[id-parking-space]/
+   http://127.0.0.1:8000/delete-parking-space/[id-parking-space]/
   ```
 View all bookings (only users in Manager group can view all bookings, users in Employee groups can see only their bookings):
 - url: 
@@ -109,6 +117,11 @@ Book a parking space:
 - url: 
 ```
    http://127.0.0.1:8000/api/book/[id-park-to-book]/
+  ```
+Update a parking space:
+- url: 
+```
+   http://127.0.0.1:8000/api/update-parking-space/[id-park-to-book]/
   ```
 update booking (only for users in Manager group):
 - url: 
