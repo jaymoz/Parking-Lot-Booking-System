@@ -88,7 +88,9 @@ e.g:
 
  - id-booking: unique id of each succesful booking placed.
  - id-park-to-book: unique if of the intended parking space where you want to book.
-Get user Token:
+
+
+- Get user Token:
 ```html
    sudo install httpie
    http POST  http://127.0.0.1:8000/api-token-auth/ username=“YOUR_USERNAME" password=“YOUR_PASSWORD”
