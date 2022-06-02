@@ -1,5 +1,5 @@
 # PARKING LOT SPACE BOOKING SYSTEM
-- deployed project at http://jaymoz.pythonanywhere.com/
+
 ## Task description
 Technical task
 
