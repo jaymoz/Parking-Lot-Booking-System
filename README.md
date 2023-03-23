@@ -3,7 +3,7 @@
 ## Task description
 Technical task
 
-Develop an application for booking parking spaces in the “Fregat office center”.
+Build an API for booking parking spaces in the “Fregat office center”.
 The application must have two employee roles: "Manager", "Employee".
 - The manager can add, delete and edit information about booked time of the parking space.
 - Employees must be able to reserve a parking space for the specified time.
